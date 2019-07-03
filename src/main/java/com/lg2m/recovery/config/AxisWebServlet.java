@@ -1,4 +1,4 @@
-package com.usoft.config;
+package com.lg2m.recovery.config;
 
 import org.apache.axis.transport.http.AxisServlet;
 

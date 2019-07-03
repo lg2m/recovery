@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions targetNamespace="http://api.usoft.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://api.usoft.com" xmlns:intf="http://api.usoft.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:definitions targetNamespace="http://recovery.lg2m.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://recovery.lg2m.com" xmlns:intf="http://recovery.lg2m.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <!--WSDL created by Apache Axis version: 1.4
 Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
-  <schema elementFormDefault="qualified" targetNamespace="http://api.usoft.com" xmlns="http://www.w3.org/2001/XMLSchema">
+  <schema elementFormDefault="qualified" targetNamespace="http://recovery.lg2m.com" xmlns="http://www.w3.org/2001/XMLSchema">
    <element name="name" type="xsd:string"/>
    <element name="homeReturn" type="xsd:string"/>
   </schema>
@@ -11,17 +11,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    <wsdl:message name="homeResponse">
 
-      <wsdl:part element="impl:homeReturn" name="homeReturn">
-
-      </wsdl:part>
+      <wsdl:part element="impl:homeReturn" name="homeReturn"/>
 
    </wsdl:message>
 
    <wsdl:message name="homeRequest">
 
-      <wsdl:part element="impl:name" name="name">
-
-      </wsdl:part>
+      <wsdl:part element="impl:name" name="name"/>
 
    </wsdl:message>
 
@@ -29,13 +25,9 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       <wsdl:operation name="home" parameterOrder="name">
 
-         <wsdl:input message="impl:homeRequest" name="homeRequest">
+         <wsdl:input message="impl:homeRequest" name="homeRequest"/>
 
-       </wsdl:input>
-
-         <wsdl:output message="impl:homeResponse" name="homeResponse">
-
-       </wsdl:output>
+         <wsdl:output message="impl:homeResponse" name="homeResponse"/>
 
       </wsdl:operation>
 
@@ -69,7 +61,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       <wsdl:port binding="impl:HomeControllerSoapBinding" name="HomeController">
 
-         <wsdlsoap:address location="http://localhost:8080//services/com/usoft/api/HomeController"/>
+         <wsdlsoap:address location="http://localhost:8080//services/HomeController"/>
 
       </wsdl:port>
 

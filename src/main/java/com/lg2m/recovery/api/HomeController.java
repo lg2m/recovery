@@ -1,4 +1,4 @@
-package com.usoft.api;
+package com.lg2m.recovery.api;
 
 public class HomeController {
     public String home(String name) {

@@ -41,7 +41,7 @@
     <parameter name="className" value="org.apache.axis.monitor.SOAPMonitorService"/>
   </service>
     <service name="Home" provider="java:RPC" style="document" use="literal">
-        <parameter name="className" value="com.usoft.api.HomeController"/>
+        <parameter name="className" value="com.lg2m.recovery.api.HomeController"/>
         <parameter name="allowedMethods" value="*"/>
         <parameter name="scope" value="Application"/>
         <namespace>http://example</namespace>
